@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sidebar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.10.1.min.js" type="text/javascript"></script>
+        <script src="vcore/vcore.sidebar.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="base.css" media="screen" type="text/css" />
+        <link rel="stylesheet" href="vcore.sidebar.css" media="screen" type="text/css" />
+        <script>
+            $(function(){
+                $('<div>').vSidebar({
+                    'items': [
+                        {link: '#1','iconUrl':'images/icon-phone.png','label':'Hotline: 0977.588.666'},
+                        {link: '#2','iconUrl':'images/icon-guide.png','label':'Hướng dẫn mua hàng'},
+                        {link: '#3','iconUrl':'images/icon-cart.png','label':'Khong co san pham nao trong gio hang.'}
+                    ],
+                    'position': 'right'
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div style="height: 1000px"></div>
+    </body>
+</html>
